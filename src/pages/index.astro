@@ -1,0 +1,217 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="UTM Link Builder & Generator - Track Campaigns Easily" 
+  description="Free UTM link builder to track your marketing campaigns in Google Analytics. Features 1-click presets for Facebook, TikTok, LinkedIn, and X."
+>
+  <div class="max-w-4xl mx-auto w-full px-6 flex flex-col gap-12">
+    
+    <!-- Hero Section -->
+    <section class="text-center space-y-4">
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white">
+        Campaign <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-blue-400">UTM Builder</span>
+      </h1>
+      <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+        Instantly generate tagged URLs for Google Analytics. Use one-click presets to eliminate typos and keep your tracking data perfectly clean.
+      </p>
+    </section>
+
+    <!-- UTM Builder Tool -->
+    <section class="bg-gray-900/40 border border-gray-800/60 shadow-2xl backdrop-blur-xl rounded-2xl p-6 md:p-8">
+      
+      <!-- Presets -->
+      <div class="mb-8 border-b border-gray-800 pb-6">
+        <label class="block text-sm font-semibold text-gray-300 mb-3 uppercase tracking-wider">Quick Presets</label>
+        <div class="flex flex-wrap gap-3">
+          <button data-preset="facebook" class="preset-btn flex items-center gap-2 px-4 py-2 bg-[#1877F2]/10 text-[#1877F2] hover:bg-[#1877F2]/20 border border-[#1877F2]/20 rounded-lg transition-colors text-sm font-medium">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook
+          </button>
+          <button data-preset="linkedin" class="preset-btn flex items-center gap-2 px-4 py-2 bg-[#0A66C2]/10 text-[#0A66C2] hover:bg-[#0A66C2]/20 border border-[#0A66C2]/20 rounded-lg transition-colors text-sm font-medium">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </button>
+          <button data-preset="twitter" class="preset-btn flex items-center gap-2 px-4 py-2 bg-gray-200/10 text-white hover:bg-gray-200/20 border border-gray-200/20 rounded-lg transition-colors text-sm font-medium">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            X (Twitter)
+          </button>
+          <button data-preset="tiktok" class="preset-btn flex items-center gap-2 px-4 py-2 bg-[#ff0050]/10 text-[#ff0050] hover:bg-[#ff0050]/20 border border-[#ff0050]/20 rounded-lg transition-colors text-sm font-medium">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            TikTok
+          </button>
+        </div>
+      </div>
+
+      <form id="utm-form" class="space-y-6">
+        <!-- Website URL -->
+        <div class="space-y-2">
+          <label for="url" class="block text-sm font-medium text-gray-300">Website URL <span class="text-red-400">*</span></label>
+          <input type="url" id="url" required placeholder="https://example.com/landing-page" 
+            class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all" />
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Campaign Source -->
+          <div class="space-y-2">
+            <label for="source" class="block text-sm font-medium text-gray-300">Campaign Source (utm_source) <span class="text-red-400">*</span></label>
+            <input type="text" id="source" required placeholder="e.g. facebook, google, newsletter" 
+              class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all" />
+            <p class="text-xs text-gray-500">The referrer (e.g. facebook, newsletter)</p>
+          </div>
+
+          <!-- Campaign Medium -->
+          <div class="space-y-2">
+            <label for="medium" class="block text-sm font-medium text-gray-300">Campaign Medium (utm_medium)</label>
+            <input type="text" id="medium" placeholder="e.g. cpc, banner, email" 
+              class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all" />
+            <p class="text-xs text-gray-500">Marketing medium (e.g. cpc, banner, email)</p>
+          </div>
+
+          <!-- Campaign Name -->
+          <div class="space-y-2">
+            <label for="campaign" class="block text-sm font-medium text-gray-300">Campaign Name (utm_campaign)</label>
+            <input type="text" id="campaign" placeholder="e.g. spring_sale, black_friday" 
+              class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all" />
+            <p class="text-xs text-gray-500">Product, promo code, or slogan</p>
+          </div>
+
+          <!-- Campaign Term -->
+          <div class="space-y-2">
+            <label for="term" class="block text-sm font-medium text-gray-300">Campaign Term (utm_term)</label>
+            <input type="text" id="term" placeholder="e.g. running+shoes" 
+              class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all" />
+            <p class="text-xs text-gray-500">Identify the paid keywords</p>
+          </div>
+        </div>
+      </form>
+
+      <!-- Output Section -->
+      <div class="mt-8 pt-8 border-t border-gray-800">
+        <label class="block text-sm font-medium text-gray-300 mb-2">Generated URL</label>
+        <div class="relative group">
+          <textarea id="result" readonly rows="3" placeholder="Your generated URL will appear here..." 
+            class="w-full bg-gray-950 border border-indigo-500/30 rounded-lg px-4 py-3 text-indigo-200 resize-none focus:outline-none transition-all break-all"></textarea>
+          
+          <button id="copy-btn" class="absolute bottom-3 right-3 bg-indigo-600 hover:bg-indigo-500 text-white p-2 rounded-md shadow-lg transition-all opacity-0 group-hover:opacity-100 flex items-center justify-center disabled:opacity-0 disabled:cursor-not-allowed">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+          </button>
+        </div>
+        <div id="copy-toast" class="text-green-400 text-sm mt-2 font-medium opacity-0 transition-opacity">URL copied to clipboard!</div>
+      </div>
+    </section>
+
+    <!-- Info Content -->
+    <section class="prose prose-invert max-w-none text-gray-400">
+      <h2 class="text-2xl font-bold text-white mb-4">Why use a UTM Link Builder?</h2>
+      <p>
+        UTM (Urchin Tracking Module) parameters are small pieces of text appended to your URLs. 
+        They allow analytics tools like Google Analytics (GA4) to track exactly where your traffic is coming from.
+      </p>
+      <p>
+        By using a generator, you ensure your tags are consistently formatted, lowering the risk of fragmented data (e.g., tracking "Facebook" and "facebook" as two separate sources).
+      </p>
+    </section>
+
+  </div>
+</Layout>
+
+<script>
+  // DOM Elements
+  const urlInput = document.getElementById('url') as HTMLInputElement;
+  const sourceInput = document.getElementById('source') as HTMLInputElement;
+  const mediumInput = document.getElementById('medium') as HTMLInputElement;
+  const campaignInput = document.getElementById('campaign') as HTMLInputElement;
+  const termInput = document.getElementById('term') as HTMLInputElement;
+  const resultArea = document.getElementById('result') as HTMLTextAreaElement;
+  const copyBtn = document.getElementById('copy-btn') as HTMLButtonElement;
+  const copyToast = document.getElementById('copy-toast') as HTMLDivElement;
+  const presetBtns = document.querySelectorAll('.preset-btn');
+
+  // Input listener arrays
+  const inputs = [urlInput, sourceInput, mediumInput, campaignInput, termInput];
+
+  // Presets mapping
+  const presets: Record<string, {source: string, medium: string}> = {
+    'facebook': { source: 'facebook', medium: 'social' },
+    'linkedin': { source: 'linkedin', medium: 'social' },
+    'twitter': { source: 'twitter', medium: 'social' },
+    'tiktok': { source: 'tiktok', medium: 'social' },
+  };
+
+  // Generate URL logic
+  function generateUrl() {
+    let baseUrl = urlInput.value.trim();
+    if (!baseUrl) {
+      resultArea.value = '';
+      copyBtn.disabled = true;
+      return;
+    }
+
+    try {
+      // Ensure protocol exists
+      if (!baseUrl.startsWith('http://') && !baseUrl.startsWith('https://')) {
+        baseUrl = 'https://' + baseUrl;
+      }
+      
+      const url = new URL(baseUrl);
+      
+      if (sourceInput.value.trim()) url.searchParams.set('utm_source', sourceInput.value.trim().toLowerCase());
+      else url.searchParams.delete('utm_source');
+
+      if (mediumInput.value.trim()) url.searchParams.set('utm_medium', mediumInput.value.trim().toLowerCase());
+      else url.searchParams.delete('utm_medium');
+
+      if (campaignInput.value.trim()) url.searchParams.set('utm_campaign', campaignInput.value.trim().toLowerCase());
+      else url.searchParams.delete('utm_campaign');
+
+      if (termInput.value.trim()) url.searchParams.set('utm_term', termInput.value.trim().toLowerCase());
+      else url.searchParams.delete('utm_term');
+
+      resultArea.value = url.toString();
+      copyBtn.disabled = false;
+    } catch (e) {
+      // Invalid URL base
+      resultArea.value = 'Please enter a valid website URL.';
+      copyBtn.disabled = true;
+    }
+  }
+
+  // Attach event listeners
+  inputs.forEach(input => {
+    input.addEventListener('input', generateUrl);
+  });
+
+  // Handle Preset Buttons
+  presetBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const presetName = (btn as HTMLButtonElement).dataset.preset;
+      if (presetName && presets[presetName]) {
+        sourceInput.value = presets[presetName].source;
+        mediumInput.value = presets[presetName].medium;
+        generateUrl();
+      }
+    });
+  });
+
+  // Handle Copy
+  copyBtn.addEventListener('click', async (e) => {
+    e.preventDefault();
+    if (!resultArea.value || copyBtn.disabled) return;
+    
+    try {
+      await navigator.clipboard.writeText(resultArea.value);
+      copyToast.classList.remove('opacity-0');
+      setTimeout(() => {
+        copyToast.classList.add('opacity-0');
+      }, 2000);
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  });
+
+  // Initial load
+  generateUrl();
+</script>

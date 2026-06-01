@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://utmbuilder-pro.pages.dev/sitemap-index.xml
