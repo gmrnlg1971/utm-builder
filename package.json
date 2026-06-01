@@ -7,7 +7,8 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "start": "astro dev",
+    "build": "astro build && node -e \"const fs=require('fs'); const file='dist/client/wrangler.json'; if(fs.existsSync(file)){ const data=JSON.parse(fs.readFileSync(file)); delete data.kv_namespaces; fs.writeFileSync(file, JSON.stringify(data)); }\"",
     "preview": "astro preview",
     "astro": "astro"
   },
